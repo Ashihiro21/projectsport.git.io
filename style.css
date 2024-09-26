@@ -271,6 +271,14 @@ margin: 0 10px;
             -webkit-box-orient: vertical;
         }
 
+            .clipped {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 7; /* Adjust the number of lines */
+            -webkit-box-orient: vertical;
+        }
+
 
         .button {
             /* Adjust styles for smaller screens */
