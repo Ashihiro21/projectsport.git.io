@@ -10,6 +10,15 @@ body{
 }
 
 
+.clipped {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* Adjust the number of lines */
+    -webkit-box-orient: vertical;
+}
+
+
 
 .company-name {
     color: white;
@@ -100,6 +109,8 @@ h2{
 } */
 
 
+
+
 .description1 {
     flex: 1;
     margin-left: 20px;
@@ -136,6 +147,7 @@ h2{
 
 .desc{
     color: #a6a6a6;
+    width: 100%;
 }
 
 .box{
@@ -161,8 +173,8 @@ h2{
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
+        text-align: center;
 }
  .btn3{
     background-color: red;
@@ -204,7 +216,7 @@ h2{
 
 
 .jumbotron3 {
-    padding: 50px;
+    padding: 10px;
     margin-top: 75px;
     background-color:none;
 
@@ -232,7 +244,9 @@ margin: 0 10px;
   /* Set height of the left column to 100% */
 
 
-
+.btn-danger{
+    background: red;
+}
 
 
 
@@ -250,22 +264,36 @@ margin: 0 10px;
             margin-top: 10px;
         }
 
-        .desc {
-            margin-right: 0;
-        }
-
-        .img-fluid{
-            width: 50rem;
-        }
 
         .button {
             /* Adjust styles for smaller screens */
             width: 100%; /* Example: Make the button full width on smaller screens */
         }
+        .description-cell{
+            margin-left: 1%;
+        }
 
+        .social-icon{
+        width: 20%;
+        }
 
     }
 
+
+    @media (max-width: 425px) {
+        img {
+            margin-left: 0;
+            max-width: 100%;
+            margin-bottom: 5%;
+        }
+
+        .hero{
+            padding-left: 5%;
+            
+        }
+
+
+    }
 
 
 
@@ -277,15 +305,13 @@ margin: 0 10px;
 
         .description {
             margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
         }
 
-        .desc {
-            margin-right: 0;
-        }
+    
 
-        .img-fluid{
-            width: 50rem;
-        }
+       
 
         .button {
             /* Adjust styles for smaller screens */
