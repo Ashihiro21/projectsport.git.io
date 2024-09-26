@@ -275,7 +275,7 @@ margin: 0 10px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 7; /* Adjust the number of lines */
+            -webkit-line-clamp: 5; /* Adjust the number of lines */
             -webkit-box-orient: vertical;
         }
 
@@ -323,7 +323,13 @@ margin: 0 10px;
             margin-left: 10px;
             margin-bottom: 10px;
         }
-
+      .clipped {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5; /* Adjust the number of lines */
+            -webkit-box-orient: vertical;
+        }
     
 
        
