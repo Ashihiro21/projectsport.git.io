@@ -147,7 +147,6 @@ h2{
 
 .desc{
     color: #a6a6a6;
-    width: 100%;
 }
 
 .box{
@@ -264,6 +263,14 @@ margin: 0 10px;
             margin-top: 10px;
         }
 
+        .desc{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 15; /* Adjust the number of lines */
+            -webkit-box-orient: vertical;
+        }
+
 
         .button {
             /* Adjust styles for smaller screens */
@@ -288,7 +295,7 @@ margin: 0 10px;
         }
 
         .hero{
-            padding-left: 5%;
+            
             
         }
 
